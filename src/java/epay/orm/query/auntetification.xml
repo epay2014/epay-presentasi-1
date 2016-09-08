@@ -1,0 +1,15 @@
+<!DOCTYPE sqlMap
+PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="showlogin">
+    <select id="tes" resultClass="epay.orm.model.m_epay_login">
+        select now()::character varying
+    </select>
+     <select id="getMenu" resultClass="epay.orm.model.m_tbl_menu">
+        select * from tbl_menu
+    </select>
+    <select id="getModul" resultClass="epay.orm.model.m_tbl_modul">
+          select * from tbl_modul
+    </select>
+  
+</sqlMap>
